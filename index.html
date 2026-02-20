@@ -2,10 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Banking UI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>wallet</p>
+
+<div class="container">
+    <h1>💰 NEO BANK</h1>
+
+    <!-- Balance Section -->
+    <div class="balance-card">
+        <h2>Current Balance</h2>
+        <p id="balance">₹0</p>
+    </div>
+
+    <!-- Add Money Section -->
+    <div class="section">
+        <h3>Add Money</h3>
+        <button class="add-btn" data-amount="500">➕ Add ₹500</button>
+        <button class="add-btn" data-amount="1000">➕ Add ₹1000</button>
+        <button class="add-btn" data-amount="2000">➕ Add ₹2000</button>
+    </div>
+
+    <!-- Withdraw Section -->
+    <div class="section">
+        <h3>Withdraw Money</h3>
+        <input type="number" id="withdrawAmount" placeholder="Enter amount">
+        <button id="withdrawBtn">Withdraw</button>
+        <p id="message"></p>
+    </div>
+
+    <!-- Transaction History (Bonus) -->
+    <div class="section">
+        <h3>Transaction History</h3>
+        <ul id="history"></ul>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
